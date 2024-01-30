@@ -1,10 +1,10 @@
 import { EPub } from "@lesjoursfr/html-to-epub";
 import PagesStorage from "./modules/PagesStorage.js";
 async function init() {
-    // const category_l2 = 'Українські народні казки';
-    // const category_l2 = 'Казки українських авторів';
-    // const category_l2 = 'Казки народів світу';
-    const category_l2 = 'Казки авторів світу';
+     const category_l2 = 'Українські народні казки';
+//     const category_l2 = 'Казки українських авторів';
+//     const category_l2 = 'Казки народів світу';
+//    const category_l2 = 'Казки авторів світу';
 
     const storage = new PagesStorage();
     await storage.init();
@@ -31,7 +31,7 @@ async function init() {
     }
 
     // const epubObject = new epub(options, 'output.epub');
-    const epub = new EPub(options, 'output.epub');
+    const epub = new EPub(options, category_l2+'.epub');
     epub.render()
         .then(() => {
             console.log("Ebook Generated Successfully!");

@@ -7,9 +7,9 @@
     "index": "node index.js",
     "parse": "node parse.js"
   },
-  "author": "",
+  "author": "me",
   "license": "MIT",
-  "engines: {
+  "engines": {
     "node": ">18"
   },
   "dependencies": {
